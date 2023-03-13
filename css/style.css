@@ -1,0 +1,209 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --dark-color:#19283f;
+    --green-color:#33d1cc;
+    --red-color:#ff3150;
+    --yellow-color:#ffc400;
+    --section-color:#eff7fa;
+}
+
+.navbar {
+    background-color: var(--dark-color);
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-toggler  {
+    color: white;
+    border:1px solid white;
+}
+.navbar-toggler:focus  {
+    box-shadow: none;
+}
+
+.navbar-toggler[aria-expanded = "true"]  {
+    border-color: var(--green-color);
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.focusc{
+    color: var(--green-color);
+}
+
+
+.search {
+    color: var(--green-color);
+    border-left: 1px solid var(--green-color);
+}
+
+.main-btn {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    
+}
+
+.landing {
+    background-color: var(--dark-color);
+    height: calc(100vh - 70px);
+}
+
+.main-title::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background-color: var(--green-color);
+    width: 120px;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.feat .text h4 {
+    color: var(--yellow-color);
+}
+
+.features .icon-holder {
+    height: 200px;
+}
+
+.features .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.number {
+    font-size: 200px;
+    color: var(--section-color);
+}
+
+.icon {
+    font-size: 70px;
+    color: var(--green-color);
+}
+
+
+.our-work {
+    background-color: var(--section-color);
+}
+
+.our-work ul li {
+    cursor: pointer;
+}
+
+.our-work ul li:hover {
+    color: var(--red-color);
+}
+.our-work ul li.active {
+    background-color: var(--red-color);
+    padding: 5px 15px;
+    color: var(--yellow-color);
+}
+.our-work .row .img {
+    position: relative;
+}
+
+
+.our-work .row .img::before {
+    content:attr(data-work);
+    position: absolute;
+    background-color: rgb(51 209 204 / 76%);
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    transition: .5s;
+    transform: rotateY(90deg);
+    transform-origin: left;
+}
+
+.our-work .row .img:hover::before {
+    transform: rotateY(0deg);
+}
+
+.team {
+    background-color: var(--section-color);
+}
+
+.team .h2 {
+    color:var(--yellow-color)
+}
+
+.team .h3 {
+    background-color: var(--green-color);
+    color: white;
+}
+
+.project {
+    background-color: var(--dark-color);
+}
+
+.subscribe {
+    background-color: var(--yellow-color);
+}
+
+.second-btn {
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+}
+
+.subscribe input[type = "email"]::placeholder {
+    color: white;
+}
+
+.subscribe input[type = "email"]:focus {
+    outline: none;
+}
+
+.subscribe input[type = "email"] {
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.contact {
+    background-color: var(--dark-color);
+}
+
+.green {
+    color: var(--green-color);
+}
+
+.yellow {
+    color: var(--yellow-color);
+}
+
+.contact ul li {
+    padding: 5px 0;
+    font-weight: bold;
+}
+
+.contact ul li a {
+    margin-left: 20px;
+}
+
+.contact ul li a svg {
+    font-size: 40px;
+}
+
+.facebook {
+    color: rgb(24, 119, 242);
+}
+
+.insta {
+    color: #ff3150;
+}
+
+.twitter {
+    color: #0075ff;
+}
+
+.youtube {
+    color: rgb(255, 0, 0);
+}
